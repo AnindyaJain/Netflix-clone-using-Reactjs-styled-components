@@ -1,0 +1,100 @@
+import styled from "styled-components/macro";
+
+export const Container = styled.div`
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	align-items: center;
+	// margin-top: 20px;
+	flex-wrap: wrap;
+	@media (max-width: 600px) {
+		flex-direction: row;
+		align-items: center;
+	}
+`;
+export const Frame = styled.div`
+	display: flex;
+	align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	width: 65%;
+	@media (max-width: 1000px) {
+		justify-content: normal;
+		width: auto;
+	}
+	@media (max-width: 600px) {
+		flex-direction: column;
+	}
+`;
+export const Input = styled.input`
+	max-width: 1100px;
+	width: 65%;
+	border: 0;
+	padding: 10px;
+	margin-left: 10px;
+	height: 55px;
+	box-sizing: border-box;
+	@media (max-width: 600px) {
+		height: autopx;
+		width: 100%;
+		// max-width: 1100px;
+	}
+`;
+
+export const Break = styled.div`
+	flex-basis: 100%;
+	height: 0;
+`;
+
+export const Button = styled.button`
+	width: auto;
+	display: flex;
+	align-self: center;
+	align-items: center;
+	justify-content: space-around;
+	height: 55px;
+	background: #e50914;
+	color: white;
+	text-transform: uppercase;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	font-size: 1rem;
+	letter-spacing: .2px;
+	border: none;
+	fit-content: contain;
+	font-weight: bold;
+	overflow: hidden;
+	cursor: pointer;
+	img {
+		margin-left: 10px;
+		filter: brightness(0) invert(1);
+		width: 14px;
+		@media (max-width: 1000px) {
+		width: 16px;
+		}
+	}
+	&:hover {
+		background: #f40612;
+	}
+	@media (max-width: 1000px) {
+		height: 55px;
+		font-size: 1rem;
+		font-weight: mormal;
+	}
+	@media (max-width: 600px) {
+		margin-top: 20px;
+		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+		height: 40px;
+		max-width: autopx;
+	}
+`;
+
+export const Text = styled.p`
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	@media (max-width: 600px) {
+		font-size: 16px;
+		line-height: 22px;
+	}
+`;
