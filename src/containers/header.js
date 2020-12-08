@@ -2,8 +2,7 @@ import React from 'react'
 import Header from '../components/header'
 import * as ROUTES from '../constants/routes'
 import logo from '../logo.svg'
-import {OptForm} from '../components/opt-form'
-import {Features} from '../components/features'
+
 
 
 export function HeaderContainer({children}) {

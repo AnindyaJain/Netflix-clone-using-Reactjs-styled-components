@@ -5,6 +5,7 @@ import {FooterContainer} from '../containers/footer';
 import {HeaderContainer} from '../containers/header';
 import {OptForm} from '../components/opt-form'
 import {Features} from '../components/features'
+import * as ROUTES from '../constants/routes'
 
 export default function Home() {
     return (
@@ -27,7 +28,7 @@ export default function Home() {
                     <OptForm.Break />
                     <OptForm.Frame>
                         <OptForm.Input placeholder="Enter address" />
-                        <OptForm.Button>Get 1 month free</OptForm.Button>
+                        <OptForm.Button to={ROUTES.SIGN_UP}>Get 1 month free</OptForm.Button>
                     </OptForm.Frame>
                 </OptForm>
                 <Features.Text>

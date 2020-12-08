@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 import App from './app.js';
 import "normalize.css";
 import {GlobalStyles} from './global-styles';
@@ -8,7 +8,7 @@ import {FirebaseContext} from './context/firebase'
 
 
 
-ReactDOM.render(
+render(
     <>
         <FirebaseContext.Provider value={{firebase}}>
         <GlobalStyles />
